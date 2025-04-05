@@ -24,6 +24,11 @@ st.markdown("Digite sua dúvida sobre tecnologia e receba uma resposta da IA Gem
 if "mensagens" not in st.session_state:
     st.session_state.mensagens = []
 
+# Botão para limpar conversa
+if st.button("🧹 Limpar Conversa"):
+    st.session_state.mensagens = []  # Limpa o histórico de mensagens
+    st.rerun() # Força a atualização da interface
+
 # Entrada do usuário
 pergunta = st.text_input("Você:", key="input")
 
