@@ -1,4 +1,4 @@
-name: deploy FainoSoni
+name: deploy Sunfirestate
 
 on:
   push:
